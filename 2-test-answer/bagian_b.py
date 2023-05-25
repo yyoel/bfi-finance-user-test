@@ -142,7 +142,7 @@ def exercise_6():
     print("Sumatera Utara:", average_sumut)
 
 
-def exercise_7():
+def exercise_7(angka):
     """
     ----------- Exercise 7 -----------
     Q: Buatlah program untuk membentuk output di bawah ini
@@ -163,18 +163,19 @@ def exercise_7():
     123456*
     1234567
     """
-    def pola_angka(angka):
     for i in range(1, angka + 1):
-        print(''.join(str(j) for j in range(1, i + 1)) + '*' * (angka - i))
+        pattern = ''.join(str(j) for j in range(1, i + 1))
+        stars = '*' * (angka - i)
+        print(pattern + stars)
 
 def main():
-    # exercise_1()
-    # exercise_2()
-    # exercise_3()
-    # exercise_4()
-    # exercise_5()
+    exercise_1()
+    exercise_2()
+    exercise_3()
+    exercise_4()
+    exercise_5()
     exercise_6()
-    # exercise_7()
+    exercise_7(9)
 
 if __name__ == "__main__":
     main()
