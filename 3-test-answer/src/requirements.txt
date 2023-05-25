@@ -1,0 +1,6 @@
+playwright
+bs4
+argparse
+psycopg2-binary
+fastapi
+uvicorn
